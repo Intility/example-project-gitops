@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
     app: example
   name: example
@@ -13,7 +12,6 @@ spec:
   strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: example
     spec:
@@ -21,4 +19,3 @@ spec:
       - image: ghcr.io/nkzk/example-go-image:release
         name: example-go-image
         resources: {}
-status: {}
